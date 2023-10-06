@@ -33,6 +33,10 @@ ul{
     padding-inline-start: 0%;
 }
 
+#menubar{
+    z-index: 99;
+}
+
 .menu ul li a {
     display:block;
     font-weight:bold;
@@ -40,6 +44,7 @@ ul{
     border-bottom: 1px dotted #e7e7e7;
     color:#333;
     text-decoration:none;
+    z-index: 99;
 }
 
 .menu ul li a:hover{
@@ -109,6 +114,85 @@ ul{
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+/* slider of slick */
+.slider-1{
+    z-index: 1;
+}
+.slider-1 .slick-slide{
+    width: 600px;
+    margin: 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-1 .slick-slide img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.slider-1 .slick-arrow{
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 183, 50)!important;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    top: 50%;
+    z-index: 2!important;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.slider-1 .slick-arrow::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #090909;
+    border-width: 3px 3px 0 0;
+    top: 24px;
+    transform: rotate(45deg);
+}
+.slider-1 .slick-next{
+    right: 5px;
+}
+.slider-1 .slick-prev{
+    left: 5px;
+}
+.slider-1 .slick-next::before{
+    left: 0px;
+}
+.slider-1 .slick-prev::before{
+    border-width: 0 0 3px 3px;
+    margin-left: 5px;
+}
+.dots-1 .slick-dots{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 520px!important;
+}
+.dots-1 .slick-dots li{
+    display: inline-block;
+    width: 40px;
+}
+.dots-1 .slick-dots button{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    
+    border-radius: 50%;
+}
+.slick-dots button::before{
+    font-size: 50px!important;
+}
     
 /*-----ここからPCモニターの記述-----*/
 @media screen and (min-width: 600px) {
@@ -126,12 +210,12 @@ nav{
     display: none;
 }
 .menu{
-width: 100%;
-font-size:0.9em;
-background-color: transparent;
-margin:0 10px;
--webkit-transform: translateX(0);
-transform: translateX(0);
+    width: 100%;
+    font-size:0.9em;
+    background-color: transparent;
+    margin:0 10px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 .menu ul{
     height: 70px;
@@ -145,7 +229,7 @@ transform: translateX(0);
     border-bottom: none;
 }
 .menu ul li a:hover{
-background-color:transparent;
+    background-color:transparent;
 }
 
 }
