@@ -185,7 +185,7 @@ h1{
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    bottom: 520px!important;
+    bottom:320px!important;
 }
 .dots-1 .slick-dots li{
     display: inline-block;
@@ -263,6 +263,12 @@ h1{
     margin: 25px 20px;
     text-align: center;
     font-size: 30px;
+}
+.dots-1 .slick-dots{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom:430px!important;
 }
 
 }
