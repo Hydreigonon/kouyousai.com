@@ -1,2 +1,2 @@
 # kouyousai
-This page is greater than formal.
+This page is greater than offical.
