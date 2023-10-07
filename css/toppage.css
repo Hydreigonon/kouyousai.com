@@ -82,7 +82,7 @@ h1{
 }
     
 /*-----ここからPCモニターの記述-----*/
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 840px) {
 
 .title_enroll{
     display: flex;
