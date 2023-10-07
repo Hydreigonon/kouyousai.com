@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+    background-color: #fefaea;
+}
+
 img{
     width: 100%;
 }
@@ -12,7 +16,7 @@ nav{
     width: 100%;
     height: 100px;
     position: relative;
-    background: #F6F6F6;
+    background: #e0e0e0;
 }
 
 .drawer{
@@ -33,6 +37,11 @@ ul{
     padding-inline-start: 0%;
 }
 
+.menu{
+    position: relative;
+    z-index: 20;
+}
+
 .menu ul li a {
     display:block;
     font-weight:bold;
@@ -40,19 +49,20 @@ ul{
     border-bottom: 1px dotted #dddcdc;
     color:#333;
     text-decoration:none;
+    z-index: 20;
 }
 
 .menu ul li a:hover{
     background-color: #e7e7e7;
-    color:rgb(255, 183, 50);
+    color: #f4ac00;
 }
     
 .menu{
     text-align:center;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgb(255,255,255);
     transition: 0.5s ease;/*滑らかに表示*/
-    -webkit-transform: translateX(100%);/*画面より100%外へ押し出し非表示にさせる*/
-    transform: translateX(100%); /*右から出す*/   
+    -webkit-transform: translateX(120%);/*画面より100%外へ押し出し非表示にさせる*/
+    transform: translateX(120%); /*右から出す*/
 }
     
 /*OPEN時の動き*/
@@ -115,26 +125,36 @@ ul{
     width: 100%;
 }
 h1{
-    padding: 0 10px;
+    padding: 0.5em;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: left;
+    font-family: "Kosugi Maru";
+    border-left: solid 5px #ea6e00;
+    background-color: #fadab3;
 }
 #blank1{
     margin: 0 0 0 auto;
 }
 .enroll-button{
-    margin: 25px 20px;
+    margin: 25px 40px;
     text-align: center;
     font-size: 30px;
-    background-color: rgb(255, 176, 31);
+    background-color: #f4ac00;
     border-radius: 8px;
+}
+.enroll-button a{
+    color: inherit;
+    text-decoration: none;
 }
 
 /* slider of slick */
 .slider-1{
-    z-index: -1;
+    z-index: 0;
 }
 .slider-1 .slick-slide{
-    width: 600px;
+    width: 100vw;
+    height: auto;
     margin: 0 40px;
     position: relative;
     overflow: hidden;
@@ -144,48 +164,12 @@ h1{
     width: 100%;
     object-fit: cover;
 }
-.slider-1 .slick-arrow{
-    padding: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: rgb(255, 183, 50)!important;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-size: 0;
-    top: 50%;
-    z-index: 2!important;
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-}
-.slider-1 .slick-arrow::before{
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #090909;
-    border-width: 3px 3px 0 0;
-    top: 24px;
-    transform: rotate(45deg);
-}
-.slider-1 .slick-next{
-    right: 5px;
-}
-.slider-1 .slick-prev{
-    left: 5px;
-}
-.slider-1 .slick-next::before{
-    left: 0px;
-}
-.slider-1 .slick-prev::before{
-    border-width: 0 0 3px 3px;
-    margin-left: 5px;
-}
+
 .dots-1 .slick-dots{
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    bottom:320px!important;
+    position: relative;
 }
 .dots-1 .slick-dots li{
     display: inline-block;
@@ -207,9 +191,18 @@ h1{
 .slick-dots button::before{
     font-size: 50px!important;
 }
+.description{
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Kosugi Maru";
+    font-size: larger;
+}
+#description-blank{
+    height: 10px;
+}
     
 /*-----ここからPCモニターの記述-----*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 730px) {
     
 /*ロゴの大きさを調整*/
 #logo img{
@@ -253,22 +246,45 @@ nav{
     height: 90px;
 }
 h1{
-    padding: 0 10px;
+    padding: 0.3em;
     text-align: left;
+    margin-top: 30px;
+    border-left: solid 5px #ea6e00;
+    background-color: #fadab3;
 }
 #blank1{
     margin: 0 0 0 auto;
 }
 .enroll-button{
-    margin: 25px 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
     text-align: center;
     font-size: 30px;
+}
+.dots-1{
+    height: 0;
 }
 .dots-1 .slick-dots{
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    bottom:430px!important;
+    position: relative;
+}
+.slider-1{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+.slick-dotted .slick-slider{
+    margin-bottom: 0;
+}
+.slider-1 .slick-slide{
+    width: 80vw;
+    height: auto;
+    margin: 0 40px;
+    position: relative;
+    overflow: hidden;
 }
 
 }
