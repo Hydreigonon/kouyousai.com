@@ -4,6 +4,41 @@ main{
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    font-size: 3.8vw;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.Character p{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+main a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    transition: .3s;
+}
+
+main p{
+    margin: 0;
+    padding-top: 50px;
+    padding: 10px 10px 2px 10px;
+}
+
+/*-----ここからPCモニターの記述-----*/
+@media screen and (min-width: 840px) {
+
+main{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
     font-size: 30px;
     font-family: "Helvetica Neue",
     Arial,
@@ -13,6 +48,26 @@ main{
     sans-serif;
 }
 
-p{
-    margin-bottom: 10px;
+main a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    transition: .3s;
+}
+main a::after{
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: rgb(255, 139, 62);
+    transition: .3s;
+    transform: translateX(100%);
+}
+main a:hover::after{
+    width: 100%;
+}
+
 }

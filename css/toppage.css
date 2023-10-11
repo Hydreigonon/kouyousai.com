@@ -17,11 +17,12 @@ h1{
     margin: 0 0 0 auto;
 }
 .enroll-button{
-    margin: 25px 40px;
+    margin: 25px 25px;
     text-align: center;
     font-size: 30px;
     background-color: #f4ac00;
-    border-radius: 8px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px #e2e2e2;
 }
 .enroll-button a{
     color: inherit;
@@ -102,10 +103,14 @@ h1{
 }
 .enroll-button{
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding: 10px;
     text-align: center;
     font-size: 30px;
+}
+.enroll-button:hover{
+    background-color: #eba502;
+    box-shadow: none;
 }
 .dots-1{
     height: 0;
