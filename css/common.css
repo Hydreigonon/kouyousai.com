@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     background-color: #fefaea;
 }
