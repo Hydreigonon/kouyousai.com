@@ -55,7 +55,7 @@ ul{
 .menu ul li a {
     display:block;
     font-weight:bold;
-    padding: 2em;
+    padding: 1em;
     border-bottom: 1px dotted #dddcdc;
     color:#333;
     text-decoration:none;

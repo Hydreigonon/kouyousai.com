@@ -72,6 +72,9 @@ h1{
 .slick-dots button::before{
     font-size: 50px!important;
 }
+.slick-dots li.slick-active{
+    opacity: 50;
+}
 .description{
     text-align: center;
     padding-top: 50px;
