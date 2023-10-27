@@ -5,11 +5,11 @@
     width: 100%;
 }
 h1{
+    font-size: 2em;
     padding: 0.5em;
     margin-left: 40px;
     margin-right: 40px;
     text-align: left;
-    font-family: "Kosugi Maru";
     border-left: solid 5px #ea6e00;
     background-color: #fadab3;
 }
@@ -102,6 +102,7 @@ h1{
     padding: 0.3em;
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-left: solid 5px #ea6e00;
     background-color: #fadab3;
 }
