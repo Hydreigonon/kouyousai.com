@@ -8,7 +8,24 @@ main{
 }
 
 h1{
-    margin: 15px;
+    font-size: 2em;
+    padding: 0.5em;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+    font-family: "Kosugi Maru";
+    border-left: solid 5px #ea6e00;
+    background-color: #fadab3;
+}
+
+h2{
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+h2 span{
+    background-color: #fc8720;
+    background: linear-gradient(transparent 60%, #fc8720 45%);
 }
 
 .Character p{
