@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 html{
+    width: 100%;
     overflow-x: hidden;
     font-family: "Kosugi Maru",
     "Helvetica Neue",
@@ -45,19 +46,15 @@ nav{
 /*ナビゲーション部分*/
 
 ul{
+    margin: 0;
     list-style: none;
     padding-inline-start: 0%;
-}
-
-.menu{
-    position: relative;
-    z-index: 20;
 }
 
 .menu ul li a {
     display:block;
     font-weight:bold;
-    padding: 1em;
+    padding: 1.5em;
     border-bottom: 1px dotted #dddcdc;
     color:#333;
     text-decoration:none;
@@ -70,17 +67,20 @@ ul{
 }
     
 .menu{
+    position: relative;
+    z-index: 20;
+    display: none;
+    opacity: 0;
     text-align:center;
     background-color:rgb(255,255,255);
-    transition: 0.5s ease;/*滑らかに表示*/
-    -webkit-transform: translateX(120%);/*画面より100%外へ押し出し非表示にさせる*/
-    transform: translateX(120%); /*右から出す*/
+    transition: opacity 0.5s 0.1s ease;
 }
     
 /*OPEN時の動き*/
 .menu.open {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);/*メニューを元の位置へ戻す*/
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease;
     
 }
     
@@ -162,6 +162,8 @@ nav{
     display: none;
 }
 .menu{
+    display: block;
+    opacity: 1;
     width: 100%;
     font-size:0.9em;
     background-color: transparent;
