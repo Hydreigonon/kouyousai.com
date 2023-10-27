@@ -16,7 +16,7 @@
         <link rel="icon" href="img/logo67.png">
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="css/exhibition.css">
         <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <!-- jQuery -->
@@ -64,37 +64,427 @@
     </header>
     <body>
         <main>
-            <p>クラス展示一覧</p>
+            <h1>クラス展示一覧</h1>
             <div class="container">
+                <div class="link-in-page">
+                    <h2>目次</h2>
+                    <ol class="page-contents">
+                        <li>クラス展示</li>
+                        <ol class="sub-element">
+                            <li><a href="#2m">2年 機械工学科</a></li>
+                            <li><a href="#2e">2年 電気・電子システム工学科</a></li>
+                            <li><a href="#2i">2年 情報工学科</a></li>
+                            <li><a href="#2c">2年 環境都市工学科</a></li>
+                            <li><a href="#2a">2年 建築学科</a></li>
+                            <div class="mokuji-blank"></div>
+                            <li><a href="#2m">4年 機械工学科</a></li>
+                            <li><a href="#2e">4年 電気・電子システム工学科</a></li>
+                            <li><a href="#2i">4年 情報工学科</a></li>
+                            <li><a href="#2c">4年 環境都市工学科</a></li>
+                            <li><a href="#2a">4年 建築学科</a></li>
+                            <div class="mokuji-blank"></div>
+                            <li><a href="#3m">3年 建築学科 ゲート展示</a></li>
+                        </ol>
+                        
+                        <li>有志展示</li>
+                        <ol class="sub-element">
+                            <li><a href="#tekkouken">鉄道航空研究同好会</a></li>
+                            <li><a href="#sadou">茶道部</a></li>
+                            <li><a href="#art-create">アートクリエイト同好会</a></li>
+                            <li><a href="#tenmon">天文同好会</a></li>
+                            <li><a href="#bijutu">美術部</a></li>
+                            <li><a href="#syashin">写真部</a></li>
+                            <li><a href="#karakuri">機巧同好会</a></li>
+                            <li><a href="#computer">コンピュータ部</a></li>
+                            <li><a href="#engeki">演劇部</a></li>
+                            <li><a href="#soukouken">総合航空技術研究会</a></li>
+                            <li><a href="#keion">軽音部</a></li>
+                            <li><a href="#roboconA">機械工学科</a></li>
+                            <li><a href="#roboconB">機械工学科</a></li>
+                            <li><a href="#suisougaku">機械工学科</a></li>
+                        </ol>
+                    </ol>
+                </div>
                 <!-- 2nd grade -->
                 <div class="row">
-                    <img src="img/exhibitions/2m.png" alt="exhibitions-2m">
-                    <div class="interblank1"></div>
-                    <img src="img/exhibitions/2e.png" alt="exhibitions-2e">
-                    <div class="interblank1"></div>
-                    <img src="" alt="">
+                    <label class="open" for="pop-up">
+                        <p id="2m">2年 機械工学科</p>
+                        <img src="img/exhibitions/2m.png" alt="exhibitions-2m">
+                    </label>
+                    <input type="checkbox" id="pop-up">
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="pop-up">閉じる</label>
+                            <h4>2年 機械工学科</h4>
+                            <img src="img/exhibitions/2m.png" alt="exhibitions-2m">
+                            <div class="exhibition-description">
+                                <h5>遊技城☆</h5>
+                                <p>可愛いうさぎさんたちがお出迎えしてくれる遊技場！</p>
+                                <p>君は何匹うさぎさんを見つけられる？</p>
+                                <p>※このポップアップが表示されている間は窓の外の操作はできません。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up2">
+                        <p id="2e">2年 電気・電子システム工学科</p>
+                        <img src="img/exhibitions/2e.png" alt="exhibitions-2e">
+                    </label>
+                    <input type="checkbox" id="pop-up2">
+                    <div class="overlay2">
+                        <div class="window2">
+                            <label class="close2" for="pop-up2">閉じる</label>
+                            <h4>2年 電気・電子システム工学科</h4>
+                            <img src="img/exhibitions/2e.png" alt="exhibitions-2e">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up3">
+                        <p id="2i">2年 情報工学科</p>
+                        <img src="img/exhibitions/2i.jpg" alt="exhibitions-2i">
+                    </label>
+                    <input type="checkbox" id="pop-up3">
+                    <div class="overlay3">
+                        <div class="window3">
+                            <label class="close3" for="pop-up3">閉じる</label>
+                            <h4>2年 情報工学科</h4>
+                            <img src="img/exhibitions/2i.jpg" alt="exhibitions-2i">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="interblank2"></div>
-                    <img src="" alt="">
-                    <div class="interblank2"></div>
-                    <img src="" alt="">
-                    <div class="interblank2"></div>
+                    <label class="open" for="pop-up4">
+                        <p id="2c">2年 環境都市工学科</p>
+                        <img src="img/exhibitions/2c.jpg" alt="exhibitions-2c">
+                    </label>
+                    <input type="checkbox" id="pop-up4">
+                    <div class="overlay4">
+                        <div class="window4">
+                            <label class="close4" for="pop-up4">閉じる</label>
+                            <h4>2年 環境都市工学科</h4>
+                            <img src="img/exhibitions/2c.jpg" alt="exhibitions-2c">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up5">
+                        <p id="2a">2年 建築学科</p>
+                        <img src="img/exhibitions/2a.jpg" alt="exhibitions-2a">
+                    </label>
+                    <input type="checkbox" id="pop-up5">
+                    <div class="overlay5">
+                        <div class="window5">
+                            <label class="close5" for="pop-up5">閉じる</label>
+                            <h4>2年 建築学科</h4>
+                            <img src="img/exhibitions/2a.jpg" alt="exhibitions-2a">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- 4th grade -->
                 <div class="row">
-                    <img src="img/exhibitions/4m.png" alt="exhibitions-4m">
-                    <div class="interblank1"></div>
-                    <img src="img/exhibitions/4e.png" alt="exhibitions-4e">
-                    <div class="interblank1"></div>
-                    <img src="" alt="">
+                    <label class="open" for="pop-up6">
+                        <p id="4m">4年 機械工学科</p>
+                        <img src="img/exhibitions/4m.png" alt="exhibitions-4m">
+                    </label>
+                    <input type="checkbox" id="pop-up6">
+                    <div class="overlay6">
+                        <div class="window6">
+                            <label class="close6" for="pop-up6">閉じる</label>
+                            <h4>4年 機械工学科</h4>
+                            <img src="img/exhibitions/4m.png" alt="exhibitions-4m">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up7">
+                        <p id="4e">4年 電気・電子システム工学科</p>
+                        <img src="img/exhibitions/4e.png" alt="exhibitions-4e">
+                    </label>
+                    <input type="checkbox" id="pop-up7">
+                    <div class="overlay7">
+                        <div class="window7">
+                            <label class="close" for="pop-up7">閉じる</label>
+                            <h4>4年 電気・電子システム工学科</h4>
+                            <img src="img/exhibitions/4e.png" alt="exhibitions-4e">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up8">
+                        <p id="4i">4年 情報工学科</p>
+                        <img src="img/exhibitions/4i.png" alt="exhibitions-4i">
+                    </label>
+                    <input type="checkbox" id="pop-up8">
+                    <div class="overlay8">
+                        <div class="window8">
+                            <label class="close8" for="pop-up8">閉じる</label>
+                            <h4>4年 情報工学科</h4>
+                            <img src="img/exhibitions/4i.png" alt="exhibitions-4i">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="interblank2"></div>
-                    <img src="" alt="">
-                    <div class="interblank2"></div>
-                    <img src="" alt="">
-                    <div class="interblank2"></div>
+                    <label class="open" for="pop-up9">
+                        <p id="4c">4年 環境都市工学科</p>
+                        <img src="img/exhibitions/4c.png" alt="exhibitions-4c">
+                    </label>
+                    <input type="checkbox" id="pop-up9">
+                    <div class="overlay9">
+                        <div class="window9">
+                            <label class="close9" for="pop-up9">閉じる</label>
+                            <h4>4年 環境都市工学科</h4>
+                            <img src="img/exhibitions/4c.png" alt="exhibitions-4c">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up10">
+                        <p id="4a">4年 建築学科</p>
+                        <img src="img/exhibitions/4a.jpg" alt="exhibitions-4a">
+                    </label>
+                    <input type="checkbox" id="pop-up10">
+                    <div class="overlay10">
+                        <div class="window10">
+                            <label class="close" for="pop-up10">閉じる</label>
+                            <h4>4年 建築学科</h4>
+                            <img src="img/exhibitions/4a.jpg" alt="exhibitions-4a">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up11">
+                        <p id="3m">3年 建築学科</p>
+                        <img src="img/exhibitions/3a.jpg" alt="exhibitions-3a">
+                    </label>
+                    <input type="checkbox" id="pop-up11">
+                    <div class="overlay11">
+                        <div class="window11">
+                            <label class="close11" for="pop-up11">閉じる</label>
+                            <h4>3年 建築学科</h4>
+                            <img src="img/exhibitions/3a.jpg" alt="exhibitions-3a">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 有志展示 -->
+                <div class="row">
+                    <label class="open" for="pop-up12">
+                        <p id="tekkouken">鉄道航空研究同好会</p>
+                        <img src="img/exhibitions/tekkouken.png" alt="exhibitions-tekkouken">
+                    </label>
+                    <input type="checkbox" id="pop-up12">
+                    <div class="overlay12">
+                        <div class="window12">
+                            <label class="close12" for="pop-up12">閉じる</label>
+                            <h4>鉄道航空研究同好会</h4>
+                            <img src="img/exhibitions/tekkouken.png" alt="exhibitions-tekkouken">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up13">
+                        <p id="sadou">茶道部</p>
+                        <img src="img/exhibitions/sadou.png" alt="exhibitions-sadou">
+                    </label>
+                    <input type="checkbox" id="pop-up13">
+                    <div class="overlay13">
+                        <div class="window13">
+                            <label class="close" for="pop-up13">閉じる</label>
+                            <h4>茶道部</h4>
+                            <img src="img/exhibitions/sadou.png" alt="exhibitions-sadou">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up14">
+                        <p>アートクリエイト同好会</p>
+                        <img src="img/exhibitions/art-create.png" alt="exhibitions-art-create">
+                    </label>
+                    <input type="checkbox" id="pop-up14">
+                    <div class="overlay14">
+                        <div class="window14">
+                            <label class="close14" for="pop-up14">閉じる</label>
+                            <h4>アートクリエイト同好会</h4>
+                            <img src="img/exhibitions/art-create.png" alt="exhibitions-art-create">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="open" for="pop-up15">
+                        <p>天文同好会</p>
+                        <img src="img/exhibitions/tenmon.png" alt="exhibitions-4c">
+                    </label>
+                    <input type="checkbox" id="pop-up15">
+                    <div class="overlay15">
+                        <div class="window15">
+                            <label class="close15" for="pop-up15">閉じる</label>
+                            <h4>天文同好会</h4>
+                            <img src="img/exhibitions/tenmon.png" alt="exhibitions-4c">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up16">
+                        <p>美術部</p>
+                        <img src="img/exhibitions/bijutu.png" alt="exhibitions-bijutu">
+                    </label>
+                    <input type="checkbox" id="pop-up16">
+                    <div class="overlay16">
+                        <div class="window16">
+                            <label class="close16" for="pop-up16">閉じる</label>
+                            <h4>美術部</h4>
+                            <img src="img/exhibitions/bijutu.png" alt="exhibitions-bijutu">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up17">
+                        <p>写真部</p>
+                        <img src="img/exhibitions/photo.png" alt="exhibitions-photo">
+                    </label>
+                    <input type="checkbox" id="pop-up17">
+                    <div class="overlay17">
+                        <div class="window17">
+                            <label class="close17" for="pop-up17">閉じる</label>
+                            <h4>写真部</h4>
+                            <img src="img/exhibitions/photo.png" alt="exhibitions-photo">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="open" for="pop-up18">
+                        <p>機巧同好会</p>
+                        <img src="img/exhibitions/karakuri.png" alt="exhibitions-karakuri">
+                    </label>
+                    <input type="checkbox" id="pop-up18">
+                    <div class="overlay18">
+                        <div class="window18">
+                            <label class="close18" for="pop-up18">閉じる</label>
+                            <h4>機巧同好会</h4>
+                            <img src="img/exhibitions/karakuri.png" alt="exhibitions-karakuri">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up19">
+                        <p>囲碁・将棋部</p>
+                        <img src="img/exhibitions/igo-shogi.png" alt="exhibitions-igo-shogi">
+                    </label>
+                    <input type="checkbox" id="pop-up19">
+                    <div class="overlay19">
+                        <div class="window19">
+                            <label class="close19" for="pop-up19">閉じる</label>
+                            <h4>囲碁・将棋部</h4>
+                            <img src="img/exhibitions/igo-shogi.png" alt="exhibitions-igo-shogi">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up20">
+                        <p>コンピュータ部</p>
+                        <img src="img/exhibitions/computer.png" alt="exhibitions-computer">
+                    </label>
+                    <input type="checkbox" id="pop-up20">
+                    <div class="overlay20">
+                        <div class="window20">
+                            <label class="close20" for="pop-up20">閉じる</label>
+                            <h4>コンピュータ部</h4>
+                            <img src="img/exhibitions/computer.png" alt="exhibitions-computer">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="open" for="pop-up21">
+                        <p>演劇部</p>
+                        <img src="img/exhibitions/engeki.png" alt="exhibitions-engeki">
+                    </label>
+                    <input type="checkbox" id="pop-up21">
+                    <div class="overlay21">
+                        <div class="window21">
+                            <label class="close21" for="pop-up21">閉じる</label>
+                            <h4>演劇部</h4>
+                            <img src="img/exhibitions/engeki.png" alt="exhibitions-engeki">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up22">
+                        <p>総合航空技術研究会</p>
+                        <img src="img/exhibitions/soukouken.png" alt="exhibitions-soukouken">
+                    </label>
+                    <input type="checkbox" id="pop-up22">
+                    <div class="overlay22">
+                        <div class="window22">
+                            <label class="close22" for="pop-up22">閉じる</label>
+                            <h4>総合航空技術研究会</h4>
+                            <img src="img/exhibitions/soukouken.png" alt="exhibitions-soukouken">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up23">
+                        <p>軽音部</p>
+                        <img src="img/exhibitions/keion.png" alt="exhibitions-keion">
+                    </label>
+                    <input type="checkbox" id="pop-up23">
+                    <div class="overlay23">
+                        <div class="window23">
+                            <label class="close23" for="pop-up23">閉じる</label>
+                            <h4>軽音部</h4>
+                            <img src="img/exhibitions/keion.png" alt="exhibitions-keion">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="open" for="pop-up24">
+                        <p>ロボコンA</p>
+                        <img src="img/exhibitions/roboconA.png" alt="exhibitions-roboconA">
+                    </label>
+                    <input type="checkbox" id="pop-up24">
+                    <div class="overlay24">
+                        <div class="window24">
+                            <label class="close24" for="pop-up24">閉じる</label>
+                            <h4>ロボコンA</h4>
+                            <img src="img/exhibitions/roboconA.png" alt="exhibitions-roboconA">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+                    
+                    <label class="open" for="pop-up25">
+                        <p>ロボコンB</p>
+                        <img src="img/exhibitions/roboconB.png" alt="exhibitions-roboconB">
+                    </label>
+                    <input type="checkbox" id="pop-up25">
+                    <div class="overlay25">
+                        <div class="window25">
+                            <label class="close25" for="pop-up25">閉じる</label>
+                            <h4>ロボコンB</h4>
+                            <img src="img/exhibitions/roboconB.png" alt="exhibitions-roboconB">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
+
+                    <label class="open" for="pop-up26">
+                        <p>吹奏楽部</p>
+                        <img src="img/exhibitions/suisougaku.png" alt="exhibitions-suisougaku">
+                    </label>
+                    <input type="checkbox" id="pop-up26">
+                    <div class="overlay26">
+                        <div class="window26">
+                            <label class="close26" for="pop-up26">閉じる</label>
+                            <h4>吹奏楽部</h4>
+                            <img src="img/exhibitions/suisougaku.png" alt="exhibitions-suisougaku">
+                            <p>この窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
