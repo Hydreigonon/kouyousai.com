@@ -28,6 +28,16 @@ h2 span{
     background: linear-gradient(transparent 60%, #fc8720 45%);
 }
 
+h3{
+    color: navy;
+    margin-bottom: 0;
+}
+
+h4{
+    padding: 0;
+    margin: 5px;
+}
+
 .day{
     border-left: solid 3px #ea6e00;
     background-color: #fadab3;
@@ -35,10 +45,6 @@ h2 span{
     margin: 30px 35%;
     margin-bottom: 0;
     padding: 10px;
-}
-
-h3{
-    color: navy;
 }
 
 .row{
