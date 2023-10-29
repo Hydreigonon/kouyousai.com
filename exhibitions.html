@@ -77,11 +77,11 @@
                             <li><a href="#2c">2年 環境都市工学科</a></li>
                             <li><a href="#2a">2年 建築学科</a></li>
                             <div class="mokuji-blank"></div>
-                            <li><a href="#2m">4年 機械工学科</a></li>
-                            <li><a href="#2e">4年 電気・電子システム工学科</a></li>
-                            <li><a href="#2i">4年 情報工学科</a></li>
-                            <li><a href="#2c">4年 環境都市工学科</a></li>
-                            <li><a href="#2a">4年 建築学科</a></li>
+                            <li><a href="#4m">4年 機械工学科</a></li>
+                            <li><a href="#4e">4年 電気・電子システム工学科</a></li>
+                            <li><a href="#4i">4年 情報工学科</a></li>
+                            <li><a href="#4c">4年 環境都市工学科</a></li>
+                            <li><a href="#4a">4年 建築学科</a></li>
                             <div class="mokuji-blank"></div>
                             <li><a href="#3m">3年 建築学科 ゲート展示</a></li>
                         </ol>
@@ -99,9 +99,9 @@
                             <li><a href="#engeki">演劇部</a></li>
                             <li><a href="#soukouken">総合航空技術研究会</a></li>
                             <li><a href="#keion">軽音部</a></li>
-                            <li><a href="#roboconA">機械工学科</a></li>
-                            <li><a href="#roboconB">機械工学科</a></li>
-                            <li><a href="#suisougaku">機械工学科</a></li>
+                            <li><a href="#roboconA">ロボコンA</a></li>
+                            <li><a href="#roboconB">ロボコンB</a></li>
+                            <li><a href="#suisougaku">吹奏楽部</a></li>
                         </ol>
                     </ol>
                 </div>
@@ -304,7 +304,7 @@
                     </div>
 
                     <label class="open" for="pop-up14">
-                        <p>アートクリエイト同好会</p>
+                        <p id="art-create">アートクリエイト同好会</p>
                         <img src="img/exhibitions/art-create.png" alt="exhibitions-art-create">
                     </label>
                     <input type="checkbox" id="pop-up14">
@@ -319,7 +319,7 @@
                 </div>
                 <div class="row">
                     <label class="open" for="pop-up15">
-                        <p>天文同好会</p>
+                        <p id="tenmon">天文同好会</p>
                         <img src="img/exhibitions/tenmon.png" alt="exhibitions-4c">
                     </label>
                     <input type="checkbox" id="pop-up15">
@@ -333,7 +333,7 @@
                     </div>
                     
                     <label class="open" for="pop-up16">
-                        <p>美術部</p>
+                        <p id="bijutu">美術部</p>
                         <img src="img/exhibitions/bijutu.png" alt="exhibitions-bijutu">
                     </label>
                     <input type="checkbox" id="pop-up16">
@@ -347,7 +347,7 @@
                     </div>
 
                     <label class="open" for="pop-up17">
-                        <p>写真部</p>
+                        <p id="photo">写真部</p>
                         <img src="img/exhibitions/photo.png" alt="exhibitions-photo">
                     </label>
                     <input type="checkbox" id="pop-up17">
@@ -362,7 +362,7 @@
                 </div>
                 <div class="row">
                     <label class="open" for="pop-up18">
-                        <p>機巧同好会</p>
+                        <p id="karakuri">機巧同好会</p>
                         <img src="img/exhibitions/karakuri.png" alt="exhibitions-karakuri">
                     </label>
                     <input type="checkbox" id="pop-up18">
@@ -376,7 +376,7 @@
                     </div>
                     
                     <label class="open" for="pop-up19">
-                        <p>囲碁・将棋部</p>
+                        <p id="igo-shogi">囲碁・将棋部</p>
                         <img src="img/exhibitions/igo-shogi.png" alt="exhibitions-igo-shogi">
                     </label>
                     <input type="checkbox" id="pop-up19">
@@ -390,7 +390,7 @@
                     </div>
 
                     <label class="open" for="pop-up20">
-                        <p>コンピュータ部</p>
+                        <p id="computer">コンピュータ部</p>
                         <img src="img/exhibitions/computer.png" alt="exhibitions-computer">
                     </label>
                     <input type="checkbox" id="pop-up20">
@@ -405,7 +405,7 @@
                 </div>
                 <div class="row">
                     <label class="open" for="pop-up21">
-                        <p>演劇部</p>
+                        <p id="engeki">演劇部</p>
                         <img src="img/exhibitions/engeki.png" alt="exhibitions-engeki">
                     </label>
                     <input type="checkbox" id="pop-up21">
@@ -419,7 +419,7 @@
                     </div>
                     
                     <label class="open" for="pop-up22">
-                        <p>総合航空技術研究会</p>
+                        <p id="soukouken">総合航空技術研究会</p>
                         <img src="img/exhibitions/soukouken.png" alt="exhibitions-soukouken">
                     </label>
                     <input type="checkbox" id="pop-up22">
@@ -433,7 +433,7 @@
                     </div>
 
                     <label class="open" for="pop-up23">
-                        <p>軽音部</p>
+                        <p id="keion">軽音部</p>
                         <img src="img/exhibitions/keion.png" alt="exhibitions-keion">
                     </label>
                     <input type="checkbox" id="pop-up23">
@@ -448,7 +448,7 @@
                 </div>
                 <div class="row">
                     <label class="open" for="pop-up24">
-                        <p>ロボコンA</p>
+                        <p id="roboconA">ロボコンA</p>
                         <img src="img/exhibitions/roboconA.png" alt="exhibitions-roboconA">
                     </label>
                     <input type="checkbox" id="pop-up24">
@@ -462,7 +462,7 @@
                     </div>
                     
                     <label class="open" for="pop-up25">
-                        <p>ロボコンB</p>
+                        <p id="roboconB">ロボコンB</p>
                         <img src="img/exhibitions/roboconB.png" alt="exhibitions-roboconB">
                     </label>
                     <input type="checkbox" id="pop-up25">
@@ -476,7 +476,7 @@
                     </div>
 
                     <label class="open" for="pop-up26">
-                        <p>吹奏楽部</p>
+                        <p id="suisougaku">吹奏楽部</p>
                         <img src="img/exhibitions/suisougaku.png" alt="exhibitions-suisougaku">
                     </label>
                     <input type="checkbox" id="pop-up26">
