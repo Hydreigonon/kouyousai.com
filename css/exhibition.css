@@ -11,6 +11,28 @@ main{
     font-size: 3.8vw;
 }
 
+.pagetop{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.pagetop-arrow{
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid #ea6e00;
+	border-right: 3px solid #ea6e00;
+	transform: translateY(20%) rotate(-45deg);
+}
+
 h1{
     font-size: min(140%, 50px);
     padding: 0.5em;
@@ -1211,20 +1233,6 @@ main a{
     position: relative;
     display: inline-block;
     transition: .3s;
-}
-main a::after{
-    position: absolute;
-    right: 100%;
-    bottom: 0;
-    content: "";
-    width: 0;
-    height: 5px;
-    background-color: rgb(255, 139, 62);
-    transition: .3s;
-    transform: translateX(100%);
-}
-main a:hover::after{
-    width: 100%;
 }
 
 .row{
