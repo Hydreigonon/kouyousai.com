@@ -26,6 +26,11 @@ h2{
     border-bottom: solid 3px rgb(255, 200, 99);
 }
 
+h3{
+	font-weight: normal;
+	font-size: min(140%, 20px);
+}
+
 .page-contents{
     text-align: left;
     padding-left: 5%;
@@ -103,9 +108,8 @@ main p{
 	top: 50%;
 	left: 50%;
 	width: 80%;
-	max-width: 360px;
+	max-width: 400px;
     padding: 20px;
-	height: 60%;
 	background-color: #fff;
     box-shadow: rgb(46, 46, 46);
     border: 5px;
