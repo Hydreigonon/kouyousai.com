@@ -19,6 +19,7 @@ main{
 	bottom: 30px;
 	background: #fff;
 	border-radius: 50%;
+	border: solid #676767 2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,9 +67,10 @@ h3{
     padding: 10px 0 0 0;
 }
 
-.page-contents li ol li{
-    padding: 0 0 0 0;
+.li-first{
+	margin-top: 15px;
 }
+
 
 ol{
     list-style: none;
@@ -86,8 +88,9 @@ main a{
 }
 
 main p{
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 10px 30px;
+	line-height: 1.1;
 }
 
 /* pop up */
@@ -174,7 +177,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height: 60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -217,7 +219,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -260,7 +261,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -303,7 +303,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -346,7 +345,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -389,7 +387,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -432,7 +429,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -475,7 +471,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -518,7 +513,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -561,7 +555,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -604,7 +597,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -647,7 +639,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -690,7 +681,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -733,7 +723,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -776,7 +765,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -819,7 +807,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -862,7 +849,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -905,7 +891,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -948,7 +933,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -991,7 +975,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -1034,7 +1017,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -1077,7 +1059,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -1120,7 +1101,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -1163,7 +1143,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
@@ -1206,7 +1185,6 @@ main p{
 	width: 80%;
 	max-width: 360px;
     padding: 20px;
-	height:60%;
 	background-color: #fff;
     border-color: rgb(255, 205, 113);
     border: 5px;
