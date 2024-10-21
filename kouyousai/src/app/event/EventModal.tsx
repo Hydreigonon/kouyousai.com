@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./event.css";
 
-export const EventModal = ({ title, imagePath, time, description }: { title: string, imagePath: string, time: string, description: string }) => {
+export const EventItem = ({ title, imagePath, time, description }: { title: string, imagePath: string, time: string, description: string }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   // モーダル外側のクリックで閉じるためのハンドラー

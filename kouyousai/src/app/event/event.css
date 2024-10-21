@@ -15,6 +15,9 @@
     margin: 10px;
     border-radius: 8px;
     display: flex;
+    background-image: url(/event_images/event_background.png);
+    background-size: 700px;
+    background-position: 4cm;
 }
 
 .event-image {
@@ -27,6 +30,7 @@
 
 .event-text {
     flex: 1;
+    color: rgb(131, 199, 223);
 }
 
 .event-title {

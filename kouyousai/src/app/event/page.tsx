@@ -1,4 +1,4 @@
-import { EventModal } from "./EventModal";
+import { EventItem } from "./EventModal";
 
 export default function Home() {
   const title: string = "男女でニコイチ！";
@@ -13,7 +13,7 @@ export default function Home() {
           イベント一覧
         </h1>
       </div>
-      <EventModal
+      <EventItem
         title={title}
         imagePath={imagePath}
         time={time}
