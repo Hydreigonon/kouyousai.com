@@ -64,6 +64,7 @@
     padding: 2rem;
     border-radius: 8px;
     position: relative;
+    width: 500px;
 }
 
 .close-button {
