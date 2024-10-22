@@ -11,13 +11,13 @@
 .event-item {
     cursor: pointer;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 0rem;
     margin: 10px;
     border-radius: 8px;
     display: flex;
-    background-image: url(/event_images/event_background.png);
+    /* background-image: url(/event_images/event_background.png);
     background-size: 700px;
-    background-position: 4cm;
+    background-position: 4cm; */
 }
 
 .event-image {
@@ -30,7 +30,7 @@
 
 .event-text {
     flex: 1;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .event-title {
