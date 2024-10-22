@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Logo from "./ui/logo";
 import Slideshow from "./ui/slideshow";
-import Text from "./ui/text";
 
 export default function Home() {
   const text1 = `こうよう祭は豊田高専で年に１度秋に開催される文化祭です。`
