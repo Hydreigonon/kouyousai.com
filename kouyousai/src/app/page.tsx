@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Logo from "./ui/logo";
 import Slideshow from "./ui/slideshow";
+import Text from "./ui/text";
 
 export default function Home() {
+  const text1 = `こうよう祭は豊田高専で年に１度秋に開催される文化祭です。`
+
   return (
     <div>
       <h1 className="pageTitle">
-        豊田高専　文化祭<br></br>
+        豊田高専　文化祭<br/>
         こうよう祭2024
       </h1>
 
@@ -14,7 +17,14 @@ export default function Home() {
 
       <Slideshow />
 
-      
+      <p className="text-2xl tracking-wide leading-10 text-center px-20">
+        こうよう祭は豊田高専で年に一度
+        秋に開催される文化祭です。
+        <br/>
+        2024年度は11月2日(土)、11月3日(日)に開催いたします。
+        <br/>
+        今年度もお待ちしております！
+      </p>
     </div>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
