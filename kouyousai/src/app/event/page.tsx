@@ -14,7 +14,6 @@ export default function Home() {
       </div>
       {list.map(event => (
         <>
-        {event.image ? 
         <div key={event.title}>
           <EventItem
             title={event.title}
@@ -23,9 +22,6 @@ export default function Home() {
             description={event.description}
             />
         </div>
-        :
-        <></>
-        }
         </>
       ))}
     </>

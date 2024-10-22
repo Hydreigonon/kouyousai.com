@@ -16,13 +16,23 @@ export const EventItem = ({ title, imagePath, time, description }: { title: stri
     <>
       <div>
         {/* イベント項目 */}
-        <div className="event-item" onClick={() => {setIsModalOpen(true)}}>
-          <img src={imagePath} alt={title} className="event-image" />
-          <div className="event-text">
-            <div className="event-title">{title}</div>
-            <div className="event-time">{time}</div>
+        {description ?
+          <div className="event-item" onClick={() => {setIsModalOpen(true)}}>
+            <img src={imagePath} alt={title} className="event-image" />
+            <div className="event-text">
+              <div className="event-title">{title}</div>
+              <div className="event-time">{time}</div>
+            </div>
           </div>
-        </div>
+          :
+          <div className="event-item">
+            <div className="event-image" />
+            <div className="event-text">
+              <div className="event-title">{title}</div>
+              <div className="event-time">{time}</div>
+            </div>
+          </div>
+        }
 
         {/* モーダル */}
         {isModalOpen && (
@@ -34,6 +44,12 @@ export const EventItem = ({ title, imagePath, time, description }: { title: stri
                 <div className="event-time-modal">{time}</div>
                 <img src={imagePath} alt={title} className="event-image-modal" />
                 <div className="event-title-modal">{title}</div>
+                {title === "ゲストステージ" ? 
+                  <>
+                    <div className="guest-name">スリムクラブ</div>
+                    <div className="guest-description">『M-1グランプリ2010』準優勝</div>
+                  </> : 
+                <></>}
                 <p>{description}</p>
             </div>
           </div>

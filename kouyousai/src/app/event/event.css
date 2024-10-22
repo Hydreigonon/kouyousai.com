@@ -30,7 +30,7 @@
 
 .event-text {
     flex: 1;
-    color: rgb(131, 199, 223);
+    color: rgb(255, 255, 255);
 }
 
 .event-title {
@@ -102,4 +102,14 @@
     color:aliceblue;
     background: #0f59e2;
     display: inline;
+}
+
+.guest-name {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.guest-description{
+    font-size: 1.4rem;
+    font-weight: 600;
 }
