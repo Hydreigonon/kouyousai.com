@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <body className="flex flex-col min-h-screen">
+    <body className="flex flex-col h-screen">
       <Header />
       <main className="flex-grow">
         
