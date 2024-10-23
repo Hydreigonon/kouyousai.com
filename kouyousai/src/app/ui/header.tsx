@@ -36,7 +36,7 @@ export default function Header() {
       </div>
 
       {openMenu ? (
-      <div className="w-full font-bold mt-20 absolute z-10 w-100">
+      <div className="w-full font-bold mt-20 absolute z-10 md:m-2 md:ml-[120px]">
         <ul className="md:flex flex-initial text-center bg-slate-100 opacity-85">
           {data.map((value, index) => (
             <li key={index} className="p-4 my-1 bg-white">
@@ -45,7 +45,17 @@ export default function Header() {
           ))}
         </ul>
       </div>
-      ) : undefined}
+      ) : 
+      <div className="invisible md:visible md:w-full md:font-bold mt-20 absolute md:z-10 md:m-2 md:ml-[120px]">
+        <ul className="md:flex flex-initial text-center bg-slate-100 opacity-85">
+          {data.map((value, index) => (
+            <li key={index} className="p-4 my-1 bg-white">
+              <Link href={value.link}>{value.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      }
       <button onClick={menuFunction} className="flex-initial absolute top-3 right-3 md:hidden">
         {openMenu ? (
             <Image src={xmark} alt="menu-xmark" width={50} height={50} />
@@ -56,19 +66,5 @@ export default function Header() {
         
       </button>
     </nav>
-    // <nav className="md:nav md:bg-gray-600 bg-green-300">
-    //   <ul className="lg:px-10 lg:h-14 lg:flex list-none mx-auto">
-    //     <li className="text-white py-3 pr-10 block text-xl transition duration-300 ease-in-out hover:text-blue-400">
-    //       <Link href="/about" className="no-underline">
-    //         About
-    //       </Link>
-    //     </li>
-    //     <li className="text-white py-3 pr-10 block text-xl transition duration-300 ease-in-out hover:text-blue-400">
-    //       <Link href="/">
-    //         Event
-    //       </Link>
-    //     </li>
-    //   </ul>
-    // </nav>
   );
 }
