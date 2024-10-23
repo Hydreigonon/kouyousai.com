@@ -1,0 +1,115 @@
+
+.App {
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.event-item {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 0rem;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    /* background-image: url(/event_images/event_background.png);
+    background-size: 700px;
+    background-position: 4cm; */
+}
+
+.event-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0px 20px 0px 0px;
+}
+
+.event-text {
+    flex: 1;
+    color: rgb(0, 0, 0);
+}
+
+.event-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.event-time {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+    width: 500px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* modal用css */
+.event-image-modal {
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+.event-title-modal {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.event-time-modal {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 10px 5px 20px;
+    margin: 0px 0px 0px -2rem;
+    color:aliceblue;
+    background: #0f59e2;
+    display: inline;
+}
+
+.guest-name {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.guest-description{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
