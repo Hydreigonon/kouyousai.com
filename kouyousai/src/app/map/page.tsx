@@ -1,5 +1,11 @@
+import Image from "next/image";
+
 import Header from "../ui/header";
 import Footer from "../ui/footer";
+import floor1Image from "@/img/floor1.png";
+import floor2Image from "@/img/floor2.png";
+import floor3Image from "@/img/floor3.png";
+import outdoorImage from "@/img/outdoor.png";
 
 export default function About() {
 
@@ -11,15 +17,31 @@ export default function About() {
           校内マップ
         </h1>
 
-        <h2 className="text-4xl py-8 text-center">
-          Meaning
-        </h2>
-        <p className="text-2xl tracking-wide leading-10 text-center px-20">
-          昔々、ある豊田高専生が考えた。<br/>
-          秋で木々がこうようするころ、<br/>
-          文化祭で気分をこうようさせに、<br/>
-          豊田高専にいこうよう！
-        </p>
+        <div className="inset-0 flex flex-col items-center justify-center bg-orange-200">
+          <Image 
+            src={floor1Image} 
+            alt="floor1"
+            width={500}
+            className="my-5"
+          />
+          <Image 
+            src={floor2Image} 
+            alt="floor1"
+            width={500}
+          />
+          <Image 
+            src={floor3Image} 
+            alt="floor1"
+            width={500}
+            className="my-5"
+          />
+          <Image 
+            src={outdoorImage} 
+            alt="floor1"
+            width={500}
+            className="my-5"
+          />
+        </div>
       </main>
       <Footer />
     </body>
