@@ -9,7 +9,7 @@ export type event = {
   description: string,
 };
 
-export default function Home() {
+export default function Booth() {
 
   const list: event[] = foodTruckList.booths;
 

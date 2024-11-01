@@ -17,7 +17,7 @@ export type event = {
   description: string,
 };
 
-export default function Home() {
+export default function Events() {
 
   const list: event[] = eventList.events;
 
