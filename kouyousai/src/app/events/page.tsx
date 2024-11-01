@@ -1,4 +1,5 @@
 import { EventItem } from "./EventModal";
+import { TimeTable } from "./TimeTable"
 import eventList from "./eventList.json";
 import * as React from 'react';
 import Table from '@mui/material/Table';
@@ -9,9 +10,16 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+export type event = {
+  title: string,
+  image: string,
+  time: string,
+  description: string,
+};
+
 export default function Home() {
 
-  const list = eventList.events;
+  const list: event[] = eventList.events;
 
   return (
     <>
@@ -20,7 +28,7 @@ export default function Home() {
           イベント一覧
         </h1>
       </div>
-      {/* <Table>要素</Table> */}
+      <TimeTable events={list} />
       {list.map(event => (
         <>
         <div key={event.title}>
