@@ -7,32 +7,27 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <body className="flex flex-col h-screen">
-      <Header />
-      <main className="flex-grow">
-        
+    <>
 
-        <h1 className="pageTitle">
-          豊田高専　文化祭<br/>
-          こうよう祭2024
-        </h1>
+      <h1 className="pageTitle">
+        豊田高専　文化祭<br/>
+        こうよう祭2024
+      </h1>
 
-        <Logo />
+      <Logo />
 
-        <Slideshow />
+      <Slideshow />
 
-        <p className="text-2xl tracking-wide leading-10 text-center px-20">
-          こうよう祭は豊田高専で年に一度
-          秋に開催される文化祭です。
-          <br/>
-          2024年度は11月2日(土)、11月3日(日)に開催いたします。
-          <br/>
-          今年度もお待ちしております！
-        </p>
+      <p className="text-2xl tracking-wide leading-10 text-center px-20">
+        こうよう祭は豊田高専で年に一度
+        秋に開催される文化祭です。
+        <br/>
+        2024年度は11月2日(土)、11月3日(日)に開催いたします。
+        <br/>
+        今年度もお待ちしております！
+      </p>
 
-        
-      </main>
-      <Footer />
-    </body>
+    </>
+
   );
 }

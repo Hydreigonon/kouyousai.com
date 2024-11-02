@@ -24,6 +24,30 @@ export default function Header() {
       name: "About",
       link: "/about"
     },
+    {
+      name: "イベント",
+      link: "/events"
+    },
+    {
+      name: "展示",
+      link: "exhibits"
+    },
+    {
+      name: "模擬店",
+      link: "booth"
+    },
+    {
+      name: "キッチンカー",
+      link: "food-trucks"
+    },
+    {
+      name: "地図",
+      link: "map"
+    },
+    {
+      name: "アクセス",
+      link: "access"
+    }
   ];
   console.log(data);
 
