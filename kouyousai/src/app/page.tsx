@@ -1,6 +1,8 @@
 import Logo from "./ui/logo";
 import Slideshow from "./ui/slideshow";
 
+import nextConfig from "../../next.config.mjs";
+
 export default function Home() {
 
   return (
