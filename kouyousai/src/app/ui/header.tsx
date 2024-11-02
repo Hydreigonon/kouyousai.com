@@ -47,9 +47,12 @@ export default function Header() {
     {
       name: "アクセス",
       link: "access"
+    },
+    {
+      name: "ご来場の方へ",
+      link: "for_visitors"
     }
   ];
-  console.log(data);
 
   return(
     <nav className="flex">
