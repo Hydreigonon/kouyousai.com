@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "./event.css";
+import "./modal.css";
 
 export const ModalItem = ({ title, imagePath, time, description }: { title: string, imagePath: string, time: string, description: string }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -17,19 +17,19 @@ export const ModalItem = ({ title, imagePath, time, description }: { title: stri
       <div>
         {/* イベント項目 */}
         {description ?
-          <div className="event-item" onClick={() => {setIsModalOpen(true)}}>
-            <img src={imagePath} alt={title} className="event-image" />
-            <div className="event-text">
-              <div className="event-title">{title}</div>
-              <div className="event-time">{time}</div>
+          <div className="item" onClick={() => {setIsModalOpen(true)}}>
+            <img src={imagePath} alt={title} className="image" />
+            <div className="text">
+              <div className="title">{title}</div>
+              <div className="time">{time}</div>
             </div>
           </div>
           :
-          <div className="event-item">
-            <div className="event-image" />
-            <div className="event-text">
-              <div className="event-title">{title}</div>
-              <div className="event-time">{time}</div>
+          <div className="item">
+            <div className="image" />
+            <div className="text">
+              <div className="title">{title}</div>
+              <div className="time">{time}</div>
             </div>
           </div>
         }
@@ -41,9 +41,9 @@ export const ModalItem = ({ title, imagePath, time, description }: { title: stri
                 <button className="close-button" onClick={() => {setIsModalOpen(false)}}>
                     ×
                 </button>
-                <div className="event-time-modal">{time}</div>
-                <img src={imagePath} alt={title} className="event-image-modal" />
-                <div className="event-title-modal">{title}</div>
+                <div className="time-modal">{time}</div>
+                <img src={imagePath} alt={title} className="image-modal" />
+                <div className="title-modal">{title}</div>
                 {title === "ゲストステージ" ? 
                   <>
                     <div className="guest-name">スリムクラブ</div>
