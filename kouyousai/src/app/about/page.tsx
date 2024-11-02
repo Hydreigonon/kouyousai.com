@@ -1,5 +1,3 @@
-import Header from "../ui/header";
-import Footer from "../ui/footer";
 import Overview from "../ui/overview";
 
 export default function About() {

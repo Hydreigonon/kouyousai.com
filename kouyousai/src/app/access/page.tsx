@@ -1,5 +1,4 @@
-import { Typography, Box, Image } from "@mui/material";
-import { SSG_FALLBACK_EXPORT_ERROR } from "next/dist/lib/constants";
+import { Typography, Box } from "@mui/material";
 
 export default function Access() {
 

@@ -1,8 +1,5 @@
 import Logo from "./ui/logo";
 import Slideshow from "./ui/slideshow";
-import Header from "./ui/header";
-import Footer from "./ui/footer";
-import Link from "next/link";
 
 export default function Home() {
 
