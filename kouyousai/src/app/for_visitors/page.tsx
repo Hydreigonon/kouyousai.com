@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Grid, Card, CardContent, Typography, Link, Box, Button } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 
 
-export default function Home() {
+export default function ForVisitors() {
 
   return (
     <>
