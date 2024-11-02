@@ -41,7 +41,7 @@ export const ModalItem = ({ title, imagePath, time, description }: { title: stri
                 <button className="close-button" onClick={() => {setIsModalOpen(false)}}>
                     ×
                 </button>
-                <div className="time-modal">{time}</div>
+                {time ? <div className="time-modal">{time}</div> : <></>}
                 <img src={imagePath} alt={title} className="image-modal" />
                 <div className="title-modal">{title}</div>
                 {title === "ゲストステージ" ? 
